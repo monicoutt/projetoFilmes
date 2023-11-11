@@ -8,12 +8,15 @@ export default function Home() {
 
     const [movies, setMovies] = useState([]) /* */
 
-
+    const img_path = 'https://image.tmdb.org/t/p/w500/'
 
     useEffect(() => {
 
-        fetch(`https://api.themoviedb.org/3/movie/popular?api_key=677460a1d2286d10f9322818a0a995c8&language=en-US&page=1`) /* fetch determina da onde vai retirar a API*/
-
+        fetch(`https://api.themoviedb.org/3/movie/popular?api_key=677460a1d2286d10f9322818a0a995c8&language=pt-BR&page=1`) /* fetch determina da onde vai retirar a API*/
+        .then(response => response.json())
+        .then(data => {
+            setMovies(data.results)
+        })
     }, [])
 
     /*const movies = [
@@ -48,7 +51,7 @@ export default function Home() {
                         return (
                             <Movie>
                                 <a href="https://www.google.com">
-                                    <img src={movie.Image_url} alt={movie.title} />
+                                    <img src={`${img_path}${movie.poster_path}`} alt={movie.title} />
                                 </a>
                                 <span>{movie.title}</span>
                             </Movie>

@@ -14,8 +14,8 @@ root.render(
 
   <BrowserRouter>
     <Routes>
-      <Route path='/' element={ <App/> }/> 
-      <Route path='/details' element={ <Details/> }/>
+      <Route path='/' element={ <App/> }/>  /* PATH - caminho de "/" */
+      <Route path='/details/:id' element={ <Details/> }/>
     </Routes>
   </BrowserRouter>
 

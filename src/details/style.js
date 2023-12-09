@@ -65,4 +65,13 @@ export const Container = styled.div`
         padding-top: 20px;
         font-weight: bold ;
     }
+
+    .trailer {
+        margin-top: 5rem;
+        text-align: center;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 `

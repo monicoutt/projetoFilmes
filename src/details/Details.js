@@ -82,7 +82,7 @@ function Details() {
         </div>
 
         <div className="trailer">
-            <iframe width="660" height="415" src={trailer.key} title={trailer.name} class="embed hide" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; picture-in-picture" /> 
+            <iframe width="790" height="415" src={trailer.key} title={trailer.name} class="embed hide" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; picture-in-picture" /> 
         </div>
 
         </Container>

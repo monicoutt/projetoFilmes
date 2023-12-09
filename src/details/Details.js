@@ -44,7 +44,7 @@ function Details() {
         .then(data => {
             console.log(data.results[0])
 
-            if (data.results.length > 0) { 
+            if (data.results.length > 0) {  // data= pegar todos os dados; results= a lista; length= "comprimento" da lista, (se for maior que 0 executa "trailer")
 
             const trailer = {
                 name: data.results[0].name,

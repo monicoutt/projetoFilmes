@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+
     h2 {
         text-align: center;
         margin: 4rem 0;
     }
-
 
     img {
         width: 180px;
@@ -24,6 +24,11 @@ export const Container = styled.div`
 
     a:hover {
         transform: scale(1.1); // saltada para a frente
+    }
+
+    .title p {
+        font-size: 10;
+
     }
 `
 

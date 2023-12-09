@@ -48,7 +48,7 @@ export default function Home() {
         <Container>
             <h2>Catálogo
             <div className="retangulo"></div>
-            <h3 className="title"> Filmes populares </h3>
+            <p className="title"> Filmes populares </p>
             </h2>
 
             

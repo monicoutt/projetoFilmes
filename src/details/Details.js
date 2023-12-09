@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom"; 
+import { Link, useParams } from "react-router-dom"; 
 import { APIKEY } from "../config/key";
+import { Container } from "./style";
 
 function Details() {
 
@@ -24,7 +25,9 @@ function Details() {
                 title: data.title,
                 overview: data.overview,
                 releaseDate: data.release_date,
-                poster_path: `${img_path}${data.poster_path}`
+                poster_path: `${img_path}${data.poster_path}`,
+                vote_average: data.vote_average,
+                vote_count: data.vote_count,
             }
 
             setMovie(movie) // data= todos os itens; results= uma listagem específica
@@ -32,15 +35,31 @@ function Details() {
     }, [id])
 
     return (
+       
+        <Container>
+
+        <div className="header">
+            <h1>NETFLIX</h1>
+        </div>
+
         <div className="details">
 
             <img src={movie.poster_path} alt={movie.title}/>
 
-            <h1> {movie.title} </h1>
-            <span>Sinopse: {movie.overview} </span>
-            <span> Data de Lançamento: {movie.releaseDate} </span>
-            <button> Voltar </button>
+            <div className="info">
+                <h1> {movie.title} </h1>
+                <span className="sinopse">Sinopse: {movie.overview} </span>
+                <span className="release"> Data de Lançamento: {movie.releaseDate} </span>
+
+                <span>Avaliação:{movie.vote_average}</span>
+                <span>Quantidade de Votos: {movie.vote_count}</span>
+
+                <Link to="/"> <button> Retornar </button> </Link>
+            </div>
+
         </div>
+
+        </Container>
     )
 }
 

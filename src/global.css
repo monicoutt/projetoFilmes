@@ -17,22 +17,10 @@ h1 {
     font-weight: bold ;
 }
 
-.title h3 {
-    color: rgb(255, 255, 255);
-    padding-top: 30px;
-    font-size: 20px;
-}
-
-.details h1 {
-    color: rgb(255, 255, 255);
-    padding-top: 40px;
- 
-}
-
   .retangulo {
     width: 130px;
     height: 3px;
     background-color: #ff0000;
   
-    margin-left: 729px;
+    margin-left: 890px;
   }

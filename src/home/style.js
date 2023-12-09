@@ -25,11 +25,6 @@ export const Container = styled.div`
     a:hover {
         transform: scale(1.1); // saltada para a frente
     }
-
-    .title p {
-        font-size: 10;
-
-    }
 `
 
 export const MovieList = styled.ul`

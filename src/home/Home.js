@@ -46,12 +46,9 @@ export default function Home() {
 
     return (
         <Container>
-            <h2>Catálogo
-            <div className="retangulo"></div>
-            <p className="title"> Filmes populares </p>
+            <h2>Filmes populares
             </h2>
-
-            
+      
             <MovieList> 
 
                 {

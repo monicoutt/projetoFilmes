@@ -10,10 +10,10 @@ body {
     color: white;
 }
 
-h1 {
+.header {
     color: red;
     margin-left: 70px;
-    padding-top: 20px;
+    margin-top: 45px;
     font-weight: bold ;
 }
 

@@ -2,15 +2,12 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
 
-    h2 {
-        text-align: center;
-        margin: 4rem 0;
-    }
 
     img {
         width: 180px;
         border-radius: 1rem; // 1rem = 16px
         margin-bottom: 2rem;
+        margin-top: 6rem;
     }
 
     span {

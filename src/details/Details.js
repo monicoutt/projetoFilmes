@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom"; 
 import { APIKEY } from "../config/key";
 import { Container } from "./style";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faReplyAll } from '@fortawesome/free-solid-svg-icons';
 
 function Details() {
 
@@ -64,19 +66,20 @@ function Details() {
             <h1>NETFLIX</h1>
         </div>
 
+        <Link to="/"> <button> <FontAwesomeIcon icon={faReplyAll} style={{color: "#ac0c0c", width: 70, height: 30}} /> </button> </Link>
+
         <div className="details">
 
             <img src={movie.poster_path} alt={movie.title}/>
 
             <div className="info">
-                <h1> {movie.title} </h1>
+                <h1 > {movie.title} </h1>
                 <span className="sinopse">Sinopse: {movie.overview} </span>
                 <span className="release"> Data de Lançamento: {movie.releaseDate} </span>
 
                 <span>Avaliação:{movie.vote_average}</span>
                 <span>Quantidade de Votos: {movie.vote_count}</span>
 
-                <Link to="/"> <button> Retornar </button> </Link>
             </div>
 
         </div>

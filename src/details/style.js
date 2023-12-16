@@ -19,6 +19,7 @@ export const Container = styled.div`
     img {
         width: 390px;
         border-radius: 1rem; // 1rem = 16px
+        margin-top: -90px
     }
 
     .info {
@@ -41,28 +42,18 @@ export const Container = styled.div`
     }
 
     button {
-        background: red;
-        color: white;
+        background: black;
         border: none;
-        font-weight: bold;
-        font-size: 16px;
         cursor: pointer;
-        border-radius: 0.8rem;
-        padding: 0.4rem 0.6rem; // cordenada Y / cordenada X
-        margin-top: 2rem;
-
-        transition: all 0.3s;
+        margin-top: 15px;
+        margin-left: 25px;
     }
 
-    button: hover {
-        background: #B40000;
-        color: white;
-    }
 
     .header h1 {
         color: red;
-        margin-left: 70px;
-        padding-top: 20px;
+        margin-left: -10px;
+        padding-top: -19px;
         font-weight: bold ;
     }
 
